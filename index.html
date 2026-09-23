@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff9f7">
+  <meta name="description" content="Sentires, espacio terapéutico de la Lic. Noelia Martínez. Acompañamiento psicológico para infancias, adolescencias y familias en Córdoba.">
+  <title>Sentires · Lic. Noelia Martínez</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+:root{--paper:#fffaf8;--cream:#fff1ef;--cream-strong:#fbe3e0;--ink:#302524;--muted:#665755;--rose:#a3525a;--rose-light:#f6dbdb;--mint:#dff5f1;--teal:#246965;--lilac:#eee8ff;--violet:#625490;--line:#eadbd8;--shadow:0 18px 45px rgba(109,64,67,.08)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Nunito Sans",Arial,sans-serif;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%}
+a{color:inherit;text-decoration:none}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--teal);outline-offset:4px}
+h1,h2,h3,p{margin-top:0}
+h1,h2,h3{line-height:1.18;letter-spacing:-.035em}
+h1{font-size:clamp(2.35rem,4.4vw,4.3rem);font-weight:900}
+h2{font-size:clamp(2rem,3.1vw,3.1rem);font-weight:800}
+h3{font-size:1.34rem;font-weight:800}
+p{color:var(--muted)}
+section[id]{scroll-margin-top:88px}
+.container{width:min(100% - 48px,1160px);margin-inline:auto}
+.skip-link{position:absolute;left:16px;top:-80px;padding:10px 16px;background:white;z-index:100;border-radius:10px}.skip-link:focus{top:10px}
+.site-header{position:sticky;top:0;z-index:50;background:rgba(255,250,248,.94);backdrop-filter:blur(18px);border-bottom:1px solid rgba(234,219,216,.65)}
+.header-inner{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+.brand,.footer-brand{display:inline-flex;align-items:center;gap:10px;flex:none;line-height:1.05}
+.brand-mark{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:#ffc4c5;color:#a5555d;font-size:20px;border:3px solid #fff;box-shadow:0 3px 10px rgba(163,82,90,.1)}
+.brand strong,.footer-brand strong{display:block;font-size:1.05rem;letter-spacing:-.03em}.brand small,.footer-brand small{display:block;font-size:.66rem;color:var(--muted);margin-top:3px}
+.desktop-nav{display:flex;align-items:center;gap:2px;padding:5px;border-radius:100px;background:#fff3f0}
+.desktop-nav a{padding:7px 11px;border-radius:100px;font-size:.78rem;font-weight:700;white-space:nowrap;color:#695b59;transition:.2s}
+.desktop-nav a:hover,.desktop-nav a:focus-visible{background:#f5e1de;color:var(--rose)}
+.header-actions{display:flex;align-items:center;gap:10px}
+.button{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:11px 18px;border-radius:100px;font-size:.9rem;font-weight:800;line-height:1.2;white-space:nowrap;transition:transform .2s,box-shadow .2s,background .2s}
+.button:hover{transform:translateY(-2px)}
+.button-whatsapp{background:#1fbe60;color:white;box-shadow:0 8px 22px rgba(31,190,96,.22)}
+.button-whatsapp:hover{background:#19a954;box-shadow:0 12px 26px rgba(31,190,96,.29)}
+.button>span:first-child{font-size:1.2rem;line-height:1}
+.mobile-menu{display:none}
+.hero{position:relative;overflow:hidden;padding:94px 0 100px;background:linear-gradient(180deg,#ffefed 0%,#fffaf8 85%)}
+.hero-glow{position:absolute;width:440px;height:440px;border-radius:50%;filter:blur(70px);opacity:.38;pointer-events:none}.hero-glow-one{top:-250px;left:-180px;background:#f5a7b1}.hero-glow-two{right:-180px;bottom:-260px;background:#c9ede8}
+.hero-grid{position:relative;display:grid;grid-template-columns:42% 58%;align-items:center;gap:34px}
+.hero-portrait-wrap{display:flex;align-items:center;flex-direction:column;text-align:center}
+.portrait-halo{position:relative;width:min(76%,338px);aspect-ratio:1;border-radius:50%;padding:10px;background:linear-gradient(140deg,#b9e5e0,#fff,#efb5b9);box-shadow:0 24px 56px rgba(110,76,78,.13)}
+.portrait-halo:before{content:"";position:absolute;inset:-17px;border-radius:50%;background:linear-gradient(140deg,#d6eae6,#efdfef,#f7d1d0);z-index:-1;filter:blur(15px);opacity:.8}
+.portrait-frame{position:relative;width:100%;height:100%;border:6px solid white;border-radius:50%;overflow:hidden;background:linear-gradient(145deg,#e3efeb,#f6dbdd);display:grid;place-items:center}
+.portrait{width:100%;height:100%;object-fit:cover;object-position:center;position:absolute;inset:0}
+.portrait-initials{font-size:5rem;font-weight:800;color:#ab7479}.portrait:not([hidden])+.portrait-initials{display:none}
+.portrait-label{position:relative;z-index:1;display:flex;align-items:center;gap:7px;margin-top:-15px;padding:8px 12px;background:white;border-radius:100px;box-shadow:var(--shadow);font-size:.77rem;font-weight:800;white-space:nowrap}
+.seal{width:20px;height:20px;border-radius:50%;display:inline-grid;place-items:center;background:#e2f4ef;color:var(--teal);font-size:.7rem;font-weight:900;flex:none}
+.license{padding:3px 7px;border-radius:100px;background:#f9e5e4;color:var(--rose);font-size:.67rem}
+.portrait-note{margin:22px 0 0;padding:5px 12px;border-radius:100px;background:#fff5f3;color:#8d6a68;font-size:.73rem;font-weight:700}.portrait-note span{color:var(--rose);font-size:1rem}
+.hero-copy{padding-right:3%;max-width:690px}.eyebrow{display:inline-block;padding:5px 12px;border-radius:100px;font-size:.69rem;line-height:1.3;font-weight:900;letter-spacing:.08em;text-transform:uppercase}.eyebrow-mint{background:#dff5f1;color:#2c6e69}.eyebrow-rose{background:#f9e8e7;color:#9b4e56}.eyebrow-white{background:rgba(255,255,255,.8);color:#9b4e56}
+.hero h1{margin:16px 0 16px}.hero h1 em{font-style:normal;color:var(--rose);position:relative;white-space:nowrap}.hero h1 em:after{content:"";position:absolute;left:0;right:0;bottom:-5px;height:9px;border-bottom:4px solid #e9a0a4;border-radius:50%}
+.lead{font-size:1.08rem;line-height:1.72;max-width:620px;margin-bottom:24px}.button-large{padding:16px 25px;font-size:1.05rem}.hero-trust{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:26px;color:#716360;font-size:.76rem;font-weight:700}.hero-trust span:before{content:"✓";color:var(--teal);margin-right:6px}
+.section{padding:92px 0}.section-heading{text-align:center;max-width:640px;margin:0 auto 40px}.section-heading h2{margin:12px 0 9px}.section-heading p{margin:0;font-size:.99rem}
+.service-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.service-card{display:flex;flex-direction:column;min-height:288px;padding:27px 30px;border-radius:25px;box-shadow:0 10px 28px rgba(103,69,72,.035);transition:transform .2s,box-shadow .2s}.service-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.service-card.rose{background:#fff0f0}.service-card.mint{background:#edf9f7}.service-card.lilac{background:#f6f2ff}.service-card.peach{background:#ffefec}
+.card-icon{display:grid;place-items:center;width:42px;height:42px;border-radius:13px;background:white;color:var(--rose);font-size:1.55rem;margin-bottom:14px}.mint .card-icon{color:var(--teal)}.lilac .card-icon{color:var(--violet)}
+.card-kicker{display:block;font-size:.68rem;font-weight:900;text-transform:uppercase;letter-spacing:.08em;color:var(--rose);margin-bottom:5px}.mint .card-kicker{color:var(--teal)}.lilac .card-kicker{color:var(--violet)}
+.service-card h3{margin:0 0 8px}.service-card p{margin:0 0 21px;font-size:.9rem;line-height:1.65}.card-foot{margin-top:auto;padding-top:12px;border-top:1px solid rgba(125,86,88,.12);font-size:.7rem;font-weight:800;color:#806665}
+.approach-section{background:#fff1ef}.approach-panel{padding:42px;background:white;border-radius:30px;box-shadow:var(--shadow)}.approach-intro{max-width:760px}.approach-intro h2{max-width:650px;margin:12px 0}.approach-intro p{max-width:790px;margin-bottom:32px}.approach-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.approach-step{padding:21px;border-radius:19px;background:#fff0ef}.approach-step:nth-child(2){background:#eaf9f6}.approach-step:nth-child(3){background:#f1edff}.approach-step:nth-child(4){background:#fff0ec}.step-number{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:white;color:var(--rose);font-size:.66rem;font-weight:900;margin-bottom:16px}.approach-step h3{font-size:1.05rem;margin:0 0 7px}.approach-step p{font-size:.79rem;line-height:1.55;margin:0}
+.about-grid{display:grid;grid-template-columns:43% 1fr;gap:65px;align-items:center}.about-grid h2{margin:13px 0}.about-lead{font-size:1rem;line-height:1.75}.credential{display:flex;align-items:center;gap:12px;width:fit-content;margin-top:24px;padding:10px 16px 10px 10px;border-radius:18px;background:#fff0ef}.about-avatar{position:relative;display:grid;place-items:center;flex:none;width:54px;height:54px;overflow:hidden;border:3px solid white;border-radius:50%;background:#dff1ed;color:var(--teal)}.about-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%}.about-avatar-initials{font-size:.8rem;font-weight:900}.about-photo:not([hidden])+.about-avatar-initials{display:none}.credential strong,.credential small{display:block;line-height:1.3}.credential strong{font-size:.84rem}.credential small{font-size:.71rem;color:var(--muted);margin-top:3px}
+.focus-list{display:grid;gap:11px}.focus-list>div{display:flex;gap:14px;align-items:flex-start;padding:17px 19px;border:1px solid #f1e8e5;border-radius:18px;background:white;box-shadow:0 7px 20px rgba(103,69,72,.035)}.focus-list>div>span{width:33px;height:33px;display:grid;place-items:center;flex:none;border-radius:11px;background:#e5f5f1;color:var(--teal);font-size:1.2rem}.focus-list>div:nth-child(2)>span{background:var(--lilac);color:var(--violet)}.focus-list>div:nth-child(3)>span{background:var(--rose-light);color:var(--rose)}.focus-list p{margin:0}.focus-list strong,.focus-list small{display:block}.focus-list strong{font-size:.91rem}.focus-list small{font-size:.78rem;color:var(--muted);margin-top:2px}
+.modality-section{background:#fff5f4}.modality-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.modality-card{display:flex;gap:18px;min-height:245px;padding:30px;border-radius:25px;background:white;box-shadow:0 9px 30px rgba(103,69,72,.05)}.modality-icon{display:grid;place-items:center;flex:none;width:49px;height:49px;border-radius:15px;font-size:1.8rem}.mint-icon{background:#def3ee;color:var(--teal)}.lilac-icon{background:#ece6fd;color:var(--violet)}.modality-card h3{margin:3px 0 10px}.modality-card p{font-size:.88rem;margin-bottom:18px}.location-pill{display:inline-block;padding:7px 11px;border-radius:100px;background:#fff0ef;color:#895b5e;font-size:.68rem;font-weight:800}
+.contact-section{padding-bottom:75px}.contact-panel{position:relative;overflow:hidden;text-align:center;padding:55px 50px 40px;border-radius:30px;background:linear-gradient(135deg,#f8eeee,#ffe8e8 72%,#f5d9df);box-shadow:var(--shadow)}.contact-panel:after{content:"";position:absolute;right:-100px;bottom:-240px;width:400px;height:400px;border-radius:50%;background:rgba(255,255,255,.2);pointer-events:none}.contact-symbol{display:grid;place-items:center;width:52px;height:52px;margin:0 auto 14px;border:4px solid white;border-radius:50%;background:#f5a7ac;color:white;font-size:1.4rem;box-shadow:0 7px 18px rgba(163,82,90,.14)}.contact-panel h2{margin:14px auto 10px;max-width:740px;font-size:clamp(1.9rem,3vw,2.8rem)}.contact-panel>p{max-width:590px;margin:0 auto 20px}.contact-options{position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;max-width:820px;margin:34px auto 0;padding-top:25px;border-top:1px solid rgba(153,97,99,.17)}.contact-options>a,.contact-options>span{display:flex;align-items:center;gap:10px;text-align:left;padding:12px;background:rgba(255,255,255,.72);border-radius:14px;min-width:0}.contact-options>a:hover{background:white}.contact-options>a>span:first-child,.contact-options>span>span:first-child{display:grid;place-items:center;flex:none;width:33px;height:33px;border-radius:10px;background:#e2f4ef;color:var(--teal);font-size:1.1rem}.contact-options>a:nth-child(2)>span:first-child{background:#f8dede;color:var(--rose)}.contact-options>a small,.contact-options>a strong,.contact-options>span small,.contact-options>span strong{display:block;line-height:1.3;overflow-wrap:anywhere}.contact-options small{font-size:.64rem;color:#796768}.contact-options strong{font-size:.72rem}
+.site-footer{padding:23px 0 28px;border-top:1px solid var(--line);background:#fff4f1}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:25px}.footer-inner p{font-size:.7rem;margin:0;max-width:370px}.footer-inner>a{font-size:.76rem;font-weight:800;color:var(--rose);white-space:nowrap}
+@media(max-width:1150px){.desktop-nav{display:none}.mobile-menu{display:block;position:relative}.mobile-menu summary{list-style:none;display:flex;flex-direction:column;justify-content:center;gap:4px;width:42px;height:42px;padding:10px;background:#fff0ef;border-radius:12px;cursor:pointer}.mobile-menu summary::-webkit-details-marker{display:none}.mobile-menu summary span{display:block;width:100%;height:2px;background:#7f5559;border-radius:2px}.mobile-menu nav{position:absolute;right:0;top:calc(100% + 13px);min-width:220px;padding:8px;border:1px solid var(--line);border-radius:17px;background:white;box-shadow:var(--shadow)}.mobile-menu nav a{display:block;padding:10px 13px;border-radius:10px;font-weight:750;font-size:.88rem}.mobile-menu nav a:hover{background:#fff0ef;color:var(--rose)}}
+@media(max-width:800px){.hero{padding:62px 0 74px}.hero-grid{grid-template-columns:1fr;gap:45px}.hero-portrait-wrap{order:0}.portrait-halo{width:min(55%,260px)}.hero-copy{order:1;max-width:650px;margin:auto;text-align:center;padding:0}.hero h1{font-size:clamp(2.25rem,6vw,3.5rem)}.lead{margin-inline:auto}.hero-trust{justify-content:center}.about-grid{grid-template-columns:1fr;gap:30px}.approach-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.contact-options{grid-template-columns:1fr;max-width:410px}}
+@media(max-width:600px){.container{width:min(100% - 32px,1160px)}.header-inner{min-height:68px}.brand-mark{width:36px;height:36px}.brand strong{font-size:.98rem}.brand small{font-size:.6rem}.header-cta{padding:10px 12px;font-size:.72rem}.header-cta>span:first-child{display:none}.section{padding:65px 0}.section-heading{margin-bottom:27px}.service-grid,.modality-grid{grid-template-columns:1fr;gap:13px}.service-card{min-height:0;padding:23px}.approach-panel{padding:25px 20px}.approach-grid{gap:9px}.approach-step{padding:16px}.approach-step h3{font-size:.94rem}.approach-step p{font-size:.74rem}.modality-card{min-height:0;padding:23px}.contact-panel{padding:40px 19px 27px}.contact-panel .button-large{font-size:.89rem;padding:14px 16px}.footer-inner{align-items:flex-start;flex-wrap:wrap}.footer-inner p{order:3;flex-basis:100%}}
+@media(max-width:400px){.header-cta{font-size:.67rem;padding:9px}.brand{gap:5px}.brand small{display:none}.portrait-halo{width:67%}.hero h1{font-size:2.25rem}.button-number{display:none}.approach-grid{grid-template-columns:1fr}.contact-panel h2{font-size:1.8rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition-duration:.01ms!important;animation-duration:.01ms!important}}
+
+
+/* Ilustraciones de la demo */
+.services-layout{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.5fr);gap:22px;align-items:stretch}
+.service-visual{min-width:0;margin:0;padding:15px;display:flex;flex-direction:column;align-items:center;justify-content:center;border-radius:25px;background:linear-gradient(160deg,#f7eeea,#f0f8f4);box-shadow:0 10px 28px rgba(103,69,72,.04)}
+.service-visual img{display:block;width:100%;max-width:460px;height:auto;filter:drop-shadow(0 10px 14px rgba(80,70,60,.1))}
+.service-visual figcaption{padding-top:10px;color:#826e6c;font-size:.68rem;font-weight:700}
+.services-layout .service-grid{gap:14px}
+.services-layout .service-card{min-height:245px;padding:21px 23px}
+.services-layout .service-card h3{font-size:1.16rem}
+.services-layout .service-card p{font-size:.83rem}
+.approach-intro{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(250px,.85fr);gap:24px;max-width:none;align-items:center}
+.approach-copy{min-width:0}
+.approach-copy p{margin-bottom:24px}
+.approach-illustration{display:block;width:100%;max-width:390px;height:auto;margin-inline:auto;filter:drop-shadow(0 10px 16px rgba(91,77,71,.07))}
+@media(max-width:950px){.services-layout{grid-template-columns:1fr}.service-visual{max-width:520px;width:100%;margin-inline:auto}.approach-intro{grid-template-columns:1fr}.approach-illustration{max-width:360px;margin-top:-5px}}
+@media(max-width:600px){.services-layout .service-grid{grid-template-columns:1fr}.services-layout .service-card{min-height:0}.service-visual{padding:12px}}
+
+/* Paleta y visuales de mayor impacto */
+:root{--paper:#fff9f6;--cream:#ffe4df;--cream-strong:#f8d0d0;--ink:#2b2023;--muted:#5c494d;--rose:#aa375b;--rose-light:#f8cbd5;--mint:#c9f2e9;--teal:#166965;--lilac:#e7dafe;--violet:#624994;--line:#eec9ca;--shadow:0 22px 48px rgba(122,48,76,.13)}
+.site-header{background:rgba(255,249,246,.96);border-bottom:1px solid #f4d6d2}
+.desktop-nav{background:#ffe9e5}
+.desktop-nav a:hover,.desktop-nav a:focus-visible{background:#f8cbd5}
+.button-whatsapp{background:#128548;box-shadow:0 10px 26px rgba(12,112,58,.25)}
+.button-whatsapp:hover{background:#0e703b;box-shadow:0 13px 30px rgba(12,112,58,.32)}
+.button-outline{border:2px solid #a83f60;background:rgba(255,255,255,.75);color:#9b3151}
+.button-outline:hover{background:white;box-shadow:0 8px 20px rgba(122,48,76,.12)}
+.hero{padding:70px 0 82px;background:radial-gradient(circle at 12% 24%,#ffd0d1 0,transparent 33%),radial-gradient(circle at 86% 92%,#bbede3 0,transparent 30%),linear-gradient(125deg,#ffe4df 0%,#fff8f4 52%,#e9faf5 100%)}
+.hero-glow-one{background:#f19ba9;opacity:.48}.hero-glow-two{background:#8ce3d6;opacity:.5}
+.hero-grid{grid-template-columns:42% 58%}
+.hero-portrait-wrap{position:relative}
+.portrait-halo{width:min(79.2%,330px);background:linear-gradient(135deg,#69d2be,#fff,#eb869d)}
+.portrait-halo:before{background:linear-gradient(140deg,#a5e8dc,#f2b9ce,#f1d28e);opacity:.88}
+.hero-family-art{display:block;width:min(96%,380px);max-height:235px;object-fit:contain;margin-top:16px;filter:drop-shadow(0 14px 15px rgba(87,56,58,.12))}
+.hero-portrait-wrap .portrait-note{margin:4px 0 0}
+.hero h1{font-size:clamp(2.65rem,4.65vw,4.65rem)}
+.hero h1 em{color:#b13a62}.hero h1 em:after{border-color:#ef8da7}
+.eyebrow-mint{background:#bff0e6;color:#165c57}.eyebrow-rose{background:#f6cbd6;color:#8d2d4d}
+.hero-values{display:flex;flex-wrap:wrap;gap:8px;margin:-4px 0 21px}
+.hero-values span{padding:7px 12px;border-radius:100px;background:rgba(255,255,255,.82);border:1px solid #f3d7d7;color:#7c3955;font-size:.72rem;font-weight:900;box-shadow:0 4px 12px rgba(122,48,76,.07)}
+.hero-values span:before{content:'✦';margin-right:6px;color:#188879}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.hero-trust{font-size:.8rem;color:#554448}
+.services{background:#fffaf6}.service-visual{background:linear-gradient(150deg,#ffe0e1,#d9f4ec);box-shadow:var(--shadow)}
+.service-card.rose{background:#ffe1e5}.service-card.mint{background:#d9f4ed}.service-card.lilac{background:#eae1ff}.service-card.peach{background:#ffe5d9}
+.service-card{box-shadow:0 12px 26px rgba(103,49,70,.07);border:1px solid rgba(165,73,91,.07)}
+.card-icon{box-shadow:0 4px 12px rgba(100,60,70,.08)}
+.approach-section{background:#ffe3df}.approach-panel{border-top:5px solid #c94f70;box-shadow:var(--shadow)}
+.approach-step{background:#ffe1e5}.approach-step:nth-child(2){background:#d9f4ed}.approach-step:nth-child(3){background:#e9e0ff}.approach-step:nth-child(4){background:#ffe7d8}
+.about-section{background:linear-gradient(180deg,#fffaf7,#fff2ed)}
+.focus-list>div{border-color:#f3d5d5;box-shadow:0 10px 25px rgba(103,49,70,.06)}
+.modality-section{background:#e5f5f0}
+.modality-top{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:25px;align-items:center;margin-bottom:28px}
+.modality-top .section-heading{text-align:left;margin:0;max-width:450px}
+.modality-art{margin:0;text-align:center}
+.modality-art img{display:block;width:100%;max-width:510px;max-height:265px;object-fit:contain;margin-inline:auto;filter:drop-shadow(0 12px 17px rgba(66,90,78,.11))}
+.modality-art figcaption{font-size:.67rem;font-weight:700;color:#52716d}
+.modality-card{border:1px solid #c6e9df;box-shadow:0 12px 30px rgba(42,105,89,.08)}
+.contact-section{background:#fff9f6}
+.contact-panel{background:linear-gradient(120deg,#983452 0%,#b54463 54%,#c65c68 100%);box-shadow:0 25px 55px rgba(135,45,72,.22)}
+.contact-panel h2,.contact-panel>p{color:white}
+.contact-panel>p{font-weight:650}
+.contact-panel .eyebrow-white{background:rgba(255,255,255,.92);color:#8e3151}
+.contact-options{border-top-color:rgba(255,255,255,.35)}
+.contact-options>a,.contact-options>span{background:rgba(255,255,255,.95)}
+.site-footer{background:#ffeae5;border-top-color:#f1c7c5}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.hero{padding:55px 0 68px}.hero-family-art{max-height:210px}.hero-values,.hero-ctas{justify-content:center}.modality-top{grid-template-columns:1fr}.modality-top .section-heading{text-align:center;margin:auto}.modality-art img{max-height:230px}}
+@media(max-width:600px){.hero h1{font-size:clamp(2.25rem,8vw,3rem)}.hero-family-art{width:min(100%,310px);max-height:185px}.hero-ctas .button{width:100%}.modality-art img{max-height:205px}.hero-values{gap:6px}.hero-values span{font-size:.66rem;padding:6px 9px}}
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Ir al contenido</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Sentires, ir al inicio">
+        <span class="brand-mark" aria-hidden="true">♥</span>
+        <span><strong>Sentires</strong><small>Espacio terapéutico</small></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a><a href="#servicios">Servicios</a><a href="#enfoque">Cómo trabajo</a><a href="#sobre-mi">Sobre mí</a><a href="#modalidad">Modalidad</a><a href="#contacto">Contacto</a>
+      </nav>
+      <div class="header-actions">
+        <a class="button button-whatsapp header-cta" href="https://wa.me/5493516612405?text=Hola%20Noelia%2C%20quisiera%20consultar%20por%20un%20turno" target="_blank" rel="noopener noreferrer" aria-label="Consultar por un turno por WhatsApp"><span aria-hidden="true">↗</span><span>Consultar por turno</span></a>
+        <details class="mobile-menu">
+          <summary aria-label="Abrir menú"><span></span><span></span><span></span></summary>
+          <nav aria-label="Navegación móvil"><a href="#inicio">Inicio</a><a href="#servicios">Servicios</a><a href="#enfoque">Cómo trabajo</a><a href="#sobre-mi">Sobre mí</a><a href="#modalidad">Modalidad</a><a href="#contacto">Contacto</a></nav>
+        </details>
+      </div>
+    </div>
+  </header>
+  <main id="contenido">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-glow hero-glow-one"></div><div class="hero-glow hero-glow-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-portrait-wrap">
+          <div class="portrait-halo"><div class="portrait-frame">
+            <img class="portrait image-with-fallback" src="./sentires-logo.jpg" alt="Logo de Sentires: corazón verde agua sobre fondo coral" loading="eager">
+            <span class="portrait-initials" aria-hidden="true">S</span>
+          </div></div>
+          <div class="portrait-label"><span class="seal" aria-hidden="true">♥</span> Sentires · Espacio terapéutico</div>
+<img class="hero-family-art" src="./ilustracion-familia.png" alt="Ilustración de una persona adulta y una niña compartiendo un juego de bloques">
+<p class="portrait-note"><span aria-hidden="true">♡</span> Atención cálida, respetuosa y personalizada</p>
+        </div>
+        <div class="hero-copy">
+          <span class="eyebrow eyebrow-mint">Psicología clínica infanto-juvenil y familiar</span>
+          <h1 id="hero-title">Acompañando infancias, adolescencias y familias a <em>Sentir-se</em></h1>
+          <p class="lead">Un espacio para escuchar, comprender y acompañar cada etapa. Psicoterapia para niños, adolescentes y jóvenes, orientación familiar y evaluaciones neurocognitivas en Córdoba Capital.</p>
+          <div class="hero-values"><span>Escucha sin juicio</span><span>Enfoque lúdico</span><span>Acompañamiento familiar</span></div>
+          <div class="hero-ctas"><a class="button button-whatsapp button-large" href="https://wa.me/5493516612405?text=Hola%20Noelia%2C%20quisiera%20consultar%20por%20un%20turno" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">↗</span> Consultar por turno <span class="button-number">· 351 6612405</span></a><a class="button button-outline" href="#enfoque">Conocé mi enfoque <span aria-hidden="true">↓</span></a></div>
+          <div class="hero-trust"><span>Lic. en Psicología · UNC</span><span>Atención presencial y online</span></div>
+        </div>
+      </div>
+    </section>
+    <section class="section services" id="servicios" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-heading"><span class="eyebrow eyebrow-rose">Acompañamiento a medida</span><h2 id="services-title">Servicios terapéuticos</h2><p>Distintas formas de acompañar a cada persona y a su familia, según el momento que estén atravesando.</p></div>
+        <div class="services-layout">
+<figure class="service-visual"><img src="./ilustracion-servicios.png" alt="Ilustración de una niña jugando, una adolescente dibujando y dos personas adultas conversando"><figcaption>Ilustración de los servicios</figcaption></figure>
+        <div class="service-grid">
+          <article class="service-card rose"><span class="card-icon" aria-hidden="true">♡</span><span class="card-kicker">Niñez y adolescencia</span><h3>Psicoterapia para niños y adolescentes</h3><p>Un espacio de escucha y expresión para abordar emociones, vínculos, dificultades escolares y desafíos de cada etapa.</p><span class="card-foot">Un lugar para jugar, decir y sentir</span></article>
+          <article class="service-card mint"><span class="card-icon" aria-hidden="true">✳</span><span class="card-kicker">Evaluación y comprensión</span><h3>Valoraciones neurocognitivas</h3><p>Evaluaciones que ayudan a comprender el perfil de aprendizaje y las funciones cognitivas para orientar el acompañamiento.</p><span class="card-foot">Mirar las fortalezas y necesidades</span></article>
+          <article class="service-card lilac"><span class="card-icon" aria-hidden="true">✦</span><span class="card-kicker">Familias y crianza</span><h3>Orientación familiar y parental</h3><p>Un espacio para madres, padres y cuidadores que buscan herramientas para acompañar con más claridad y confianza.</p><span class="card-foot">Acompañamiento en cada etapa</span></article>
+          <article class="service-card peach"><span class="card-icon" aria-hidden="true">◌</span><span class="card-kicker">Jóvenes y decisiones</span><h3>Psicodiagnóstico y orientación vocacional</h3><p>Procesos de evaluación y orientación para reconocer intereses, recursos y posibilidades en momentos de elección.</p><span class="card-foot">Decisiones con escucha y sentido</span></article>
+        </div>
+        </div>
+      </div>
+    </section>
+    <section class="section approach-section" id="enfoque" aria-labelledby="approach-title">
+      <div class="container"><div class="approach-panel">
+        <div class="approach-intro"><div class="approach-copy"><span class="eyebrow eyebrow-rose">Mi manera de acompañar</span><h2 id="approach-title">Cómo trabajo: el enfoque lúdico y la seguridad emocional</h2><p>El juego y el diálogo son lenguajes propios de la infancia. Cada proceso comienza con un vínculo de confianza y se adapta a las necesidades de cada niño, niña o adolescente.</p></div><img class="approach-illustration" src="./ilustracion-juego.png" alt="Ilustración de materiales de juego, bloques, crayones y un conejo de tela"></div>
+        <div class="approach-grid">
+          <div class="approach-step"><span class="step-number">01</span><h3>Lenguaje lúdico</h3><p>El juego abre maneras de expresar lo que todavía no encuentra palabras.</p></div>
+          <div class="approach-step"><span class="step-number">02</span><h3>Ritmos propios</h3><p>Respetamos los tiempos de cada persona y construimos objetivos posibles.</p></div>
+          <div class="approach-step"><span class="step-number">03</span><h3>Trabajo con familias</h3><p>La escucha a madres, padres y cuidadores forma parte del acompañamiento.</p></div>
+          <div class="approach-step"><span class="step-number">04</span><h3>Espacio seguro</h3><p>Un encuadre cálido y confidencial para explorar, sentir y crecer.</p></div>
+        </div>
+      </div></div>
+    </section>
+    <section class="section about-section" id="sobre-mi" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div><span class="eyebrow eyebrow-mint">Trayectoria y formación</span><h2 id="about-title">Formación académica y profesional</h2><p class="about-lead">Soy Licenciada en Psicología por la Universidad Nacional de Córdoba. Mi trabajo reúne formación clínica, mirada interdisciplinaria y una escucha cercana de cada historia.</p><div class="credential"><span class="about-avatar"><img class="about-photo image-with-fallback" src="./noelia-profile.png" alt="Retrato de la Lic. Noelia Martínez" loading="eager"><span class="about-avatar-initials" aria-hidden="true">NM</span></span><div><strong>Lic. Noelia Martínez</strong><small>Matrícula profesional MP 8855 · Córdoba, Argentina</small></div></div></div>
+        <div class="focus-list" aria-label="Áreas de formación"><div><span>✳</span><p><strong>Psicoterapia infanto-juvenil</strong><small>Acompañamiento clínico de niños, adolescentes y jóvenes.</small></p></div><div><span>◇</span><p><strong>Valoraciones neurocognitivas</strong><small>Comprensión de procesos de aprendizaje y desarrollo.</small></p></div><div><span>♡</span><p><strong>Orientación a familias</strong><small>Escucha y herramientas para la crianza y los vínculos.</small></p></div></div>
+      </div>
+    </section>
+    <section class="section modality-section" id="modalidad" aria-labelledby="modality-title">
+      <div class="container"><div class="modality-top"><div class="section-heading"><span class="eyebrow eyebrow-rose">Opciones de atención</span><h2 id="modality-title">Modalidad y ubicación</h2><p>Un encuadre pensado para cada proceso y las posibilidades de cada familia.</p></div><figure class="modality-art"><img src="./ilustracion-modalidades.png" alt="Ilustración de un sillón acogedor y una computadora para representar las modalidades presencial y online"><figcaption>Imagen ilustrativa</figcaption></figure></div>
+        <div class="modality-grid"><article class="modality-card"><span class="modality-icon mint-icon" aria-hidden="true">⌂</span><div><span class="card-kicker">Córdoba Capital</span><h3>Atención presencial</h3><p>Encuentros en consultorio en zona norte de Córdoba Capital, en un espacio de escucha y privacidad.</p><span class="location-pill">San Martín · Cerro de las Rosas · Cerro Chico</span></div></article><article class="modality-card"><span class="modality-icon lilac-icon" aria-hidden="true">▣</span><div><span class="card-kicker">A distancia</span><h3>Atención online</h3><p>Una opción de acompañamiento para adolescentes y jóvenes, orientación familiar y procesos de orientación vocacional.</p><span class="location-pill">Consultar disponibilidad y encuadre</span></div></article></div>
+      </div>
+    </section>
+    <section class="section contact-section" id="contacto" aria-labelledby="contact-title"><div class="container"><div class="contact-panel"><span class="contact-symbol" aria-hidden="true">♥</span><span class="eyebrow eyebrow-white">Comencemos este camino</span><h2 id="contact-title">“Dar el primer paso es empezar a cuidarse.”</h2><p>Si querés consultar por un espacio para tu hijo, hija o familia, escribime y conversamos sobre cómo empezar.</p><a class="button button-whatsapp button-large" href="https://wa.me/5493516612405?text=Hola%20Noelia%2C%20quisiera%20consultar%20por%20un%20turno" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">↗</span> Escribirme por WhatsApp</a><div class="contact-options"><a href="tel:+5493516612405"><span aria-hidden="true">☎</span><span><small>Teléfono / WhatsApp</small><strong>351 6612405</strong></span></a><a href="mailto:licmartineznoelia@gmail.com"><span aria-hidden="true">✉</span><span><small>Correo electrónico</small><strong>licmartineznoelia@gmail.com</strong></span></a><span><span aria-hidden="true">⌖</span><span><small>Consultorios</small><strong>Córdoba · Zona Norte</strong></span></span></div></div></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><div class="footer-brand"><span class="brand-mark" aria-hidden="true">♥</span><div><strong>Sentires</strong><small>Espacio terapéutico · Lic. Noelia Martínez</small></div></div><p>Demo de presentación · Contenido y datos de contacto sujetos a validación con el cliente.</p><a href="#inicio">Volver arriba ↑</a></div></footer>
+  <script>
+document.querySelectorAll(".image-with-fallback").forEach(image => {
+  image.addEventListener("error", () => { image.hidden = true; });
+  if (image.complete && image.naturalWidth === 0) image.hidden = true;
+});
+
+const menu = document.querySelector(".mobile-menu");
+if (menu) {
+  menu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => { menu.open = false; });
+  });
+  document.addEventListener("click", event => {
+    if (menu.open && !menu.contains(event.target)) menu.open = false;
+  });
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape") menu.open = false;
+  });
+}
+
+</script>
+</body>
+</html>
